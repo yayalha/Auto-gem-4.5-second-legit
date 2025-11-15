@@ -137,7 +137,7 @@ local HintSystem = {}
 do
     local _container = HintSystem
     function _container:DrawSolutionOneByOne(puzzle, delayTime)
-        delayTime = delayTime or 1.5
+        delayTime = delayTime or 0.02
         if not puzzle or not puzzle.Solution then return end
         local totalPaths = #puzzle.Solution
         local indices = {}
