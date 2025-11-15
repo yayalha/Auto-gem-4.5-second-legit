@@ -2,7 +2,7 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 -- ============================
--- Các hàm helper
+-- Helper functions
 -- ============================
 local function getDirection(currentRow, currentCol, otherRow, otherCol)
     if otherRow < currentRow then
@@ -171,7 +171,7 @@ do
 end
 
 -- ============================
--- Hook FlowGame để auto gen 3.5s
+-- Hook FlowGame for auto gen 4.1s
 -- ============================
 local _result = ReplicatedStorage:WaitForChild("Modules"):FindFirstChild("Misc")
 if _result then
